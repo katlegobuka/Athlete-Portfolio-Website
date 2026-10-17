@@ -45,13 +45,6 @@ khoza-42-website/
 
 Visit the website: **[Khoza 42]( https://katlegobuka.github.io/Athlete-Portfolio-Website/)**
 
-## Run Locally
-
-1. Clone or download this repository.
-2. Open the project folder in your code editor.
-3. Open `index.html` in your browser.
-4. Ensure the image paths and stylesheet links are correctly configured.
-
 ## Project Purpose
 
 This project demonstrates front-end web development, responsive design, visual storytelling, and personal branding through a customised portfolio website.
