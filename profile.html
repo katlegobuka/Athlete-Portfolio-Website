@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KHOZA42 | Football Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="inner-page">
+
+<header class="navbar">
+    <a href="index.html" class="logo">KHOZA<span>42</span></a>
+
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="football.html">FOOTBALL</a>
+        <a href="models.html">MODEL</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+
+    <button class="menu" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+</header>
+
+<div class="mobile-menu">
+    <a href="index.html">HOME</a>
+    <a href="football.html">FOOTBALL</a>
+    <a href="models.html">MODEL</a>
+    <a href="contact.html">CONTACT</a>
+</div>
+   
+   
+   <!-- PROFILE SECTION -->
+    <section id="profile" class="profile-section">
+
+        <div class="section-label">
+            01 / PROFILE
+        </div>
+
+        <div class="profile-content">
+
+            <div>
+                <p class="small-title">
+                    THE PLAYER
+                </p>
+
+                <h2>
+                    Built for<br>
+                    <em>the game.</em>
+                </h2>
+            </div>
+
+            <div class="profile-text">
+
+                <p>
+                    Malibongwe Khoza is a professional footballer
+                    representing Mamelodi Sundowns.
+                </p>
+
+                <p>
+                    Explore his football journey, performances,
+                    statistics, matches and moments on and off
+                    the pitch.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CAREER -->
+    <section id="career" class="career-section">
+
+        <div class="section-label">
+            02 / CAREER
+        </div>
+
+        <div class="career-grid">
+
+            <div class="career-card">
+                <span>CLUB</span>
+                <h3>Mamelodi<br>Sundowns</h3>
+            </div>
+
+            <div class="career-card">
+                <span>NUMBER</span>
+                <h3>42</h3>
+            </div>
+
+            <div class="career-card">
+                <span>POSITION</span>
+                <h3>Defender</h3>
+            </div>
+
+            <div class="career-card">
+                <span>STATUS</span>
+                <h3>Professional Footballer<br>Model</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- MATCHES -->
+    <section id="matches" class="matches-section">
+
+        <div class="section-label">
+            03 / MATCHES
+        </div>
+
+        <div class="matches-header">
+
+            <h2>
+                On the<br>
+                <em>pitch.</em>
+            </h2>
+
+            <p>
+                Follow appearances, performances,
+                results and matchday moments.
+            </p>
+
+        </div>
+
+        <div class="match-row">
+
+            <span>01</span>
+
+            <div>
+                <small>MATCHDAY</small>
+                <h3>MAMELODI SUNDOWNS</h3>
+            </div>
+
+            <span class="match-arrow">→</span>
+
+        </div>
+
+        <div class="match-row">
+
+            <span>02</span>
+
+            <div>
+                <small>PERFORMANCE</small>
+                <h3>PLAYER STATISTICS</h3>
+            </div>
+
+            <span class="match-arrow">→</span>
+
+        </div>
+
+    </section>
+<script>
+const menu = document.querySelector(".menu");
+const mobileMenu = document.querySelector(".mobile-menu");
+
+if (menu && mobileMenu) {
+    menu.addEventListener("click", () => {
+        const isOpen = mobileMenu.classList.toggle("show");
+        menu.classList.toggle("open", isOpen);
+        menu.setAttribute("aria-expanded", String(isOpen));
+    });
+}
+</script>
+
+</body>
+</html>

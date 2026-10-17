@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>KHOZA42</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ================= NAVIGATION ================= -->
+
+<header class="navbar">
+
+    <div class="logo">
+        KHOZA<span>42</span>
+    </div>
+
+    <nav>
+        <a href="index.html" class="active">HOME</a>
+        <a href="football.html">FOOTBALL</a>
+        <a href="models.html">MODEL</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+
+    <button class="menu" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<main class="hero">
+
+    <div class="hero-content">
+
+        <!-- LEFT SIDE -->
+
+        <section class="intro">
+
+            <p class="eyebrow">
+                Professional Footballer | Model
+            </p>
+
+            <h1>
+                  MALIBONGWE
+                <span>KHOZA</span>
+            </h1>
+
+            <div class="quote">
+
+                <div class="quote-mark">“</div>
+
+                <p>
+                    THE RISING DEFENDER.
+                </p>
+
+                <strong>
+                    Built for the pitch. Made for the camera. <br> Destined for greatness.
+                </strong>
+
+            </div>
+
+            <a href="football.html" class="explore">
+                EXPLORE JOURNEY!
+                <span>→</span>
+            </a>
+
+        </section>
+
+
+        <!-- PLAYER IMAGE -->
+
+        <section class="player-area">
+
+            <div class="player-glow"></div>
+
+            <img src="Images/Khoza3.png" alt="Khoza" class="player">
+
+            <img src="Images/Khoza2.png" alt="Khoza" class="background-player">
+
+            <div class="signature">
+                KHOZA<span>42</span>
+            </div>
+
+            
+
+        </section>
+
+
+        <!-- RIGHT SIDE -->
+
+        <aside class="about">
+
+            <div class="about-heading">
+                <span>ABOUT KHOZA</span>
+            </div>
+
+            <p>
+                Mamelodi Sundowns<br>
+                Defender.<br>
+                Destined to be the best.
+            </p>
+
+            <div class="country">
+                <span>SOUTH AFRICA</span>
+
+                <div class="flag">
+                  
+                </div>
+
+                <div class="country-line"></div>
+            </div>
+
+
+            <!-- STAT CARDS -->
+
+            <div class="stats">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon"></div>
+
+                    <div>
+                        <strong>7.20</strong>
+                        <small>SEASON RATING</small>
+                    </div>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <div class="stat-icon"></div>
+
+                    <div>
+                        <strong>3</strong>
+                        <small>CLEAN SHEETS</small>
+                    </div>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <div class="stat-icon"></div>
+
+                    <div>
+                        <strong>6</strong>
+                        <small>MATCHES</small>
+                    </div>
+
+                </div>
+
+                
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon"></div>
+
+                    <div>
+                        <strong>2</strong>
+                        <small>TROPHIES</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+    <!-- ================= BOTTOM QUOTE ================= -->
+
+
+</main>
+
+
+<!-- ================= MOBILE MENU ================= -->
+
+<div class="mobile-menu">
+
+    <a href="index.html">HOME</a>
+    <a href="football.html">FOOTBALL</a>
+    <a href="models.html">MODEL</a>
+    <a href="contact.html">CONTACT</a>
+
+</div>
+
+
+<script>
+
+const menu = document.querySelector(".menu");
+const mobileMenu = document.querySelector(".mobile-menu");
+
+const openPage = (link) => {
+    const target = link.getAttribute("href");
+
+    if (!target || target === "#") {
+        return;
+    }
+
+    window.location.href = target;
+};
+
+document.querySelectorAll(".navbar nav a, .mobile-menu a").forEach((link) => {
+    link.addEventListener("click", (event) => {
+        event.preventDefault();
+        openPage(link);
+    });
+});
+
+if (menu && mobileMenu) {
+    menu.addEventListener("click", () => {
+        const isOpen = mobileMenu.classList.toggle("show");
+        menu.classList.toggle("open", isOpen);
+        menu.setAttribute("aria-expanded", String(isOpen));
+    });
+}
+
+</script>
+
+</body>
+
+<footer>
+
+    <div class="footer-logo">
+        KHOZA<span>42</span>
+    </div>
+
+    <p>
+        BUILT FOR THE PITCH. MADE FOR THE CAMERA.
+    </p>
+
+    <div class="footer-line"></div>
+
+    <div class="footer-bottom">
+
+        <span>
+            © 2026 MALIBONGWE KHOZA
+        </span>
+
+        <span>
+            MAMELODI SUNDOWNS
+        </span>
+
+    </div>
+
+</footer>
+</html>
